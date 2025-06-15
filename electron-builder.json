@@ -1,0 +1,24 @@
+{
+  "appId": "com.rlm.licensegenerator",
+  "productName": "RLM License Generator",
+  "directories": {
+    "output": "electron-dist"
+  },
+  "files": [
+    "dist/**/*",
+    "electron/**/*.cjs",
+    "maxon logo.ico"
+  ],
+  "win": {
+    "target": "nsis",
+    "icon": "maxon logo.ico"
+  },
+  "mac": {
+    "target": "dmg",
+    "category": "public.app-category.utilities"
+  },
+  "linux": {
+    "target": "AppImage",
+    "category": "Utility"
+  }
+}
